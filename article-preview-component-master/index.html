@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/main.css" />
+
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <img alt="drawers" id="drawers" src="images/drawers.jpg" />
+      </div>
+      <div class="text-container">
+        <h2 id="heading">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h2>
+        <p id="explanation">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bara and uninviting. I've got some simple tips to help
+          you make any room feel complete.
+        </p>
+        <div id="personal">
+          <div class="sub-div">
+            <div>
+              <img
+                id="avatar"
+                alt="Michel's avatar"
+                src="images/avatar-michelle.jpg"
+              />
+            </div>
+            <div>
+              <h4 id="name">Michelle Appleton</h4>
+              <p id="date">28 Jun 2020</p>
+            </div>
+          </div>
+          <div>
+            <div id="tooltip">
+              <span id="tooltiptext"
+                >SHARE
+                <a href="#"
+                  ><img
+                    class="media-btn"
+                    alt="Facebook button"
+                    src="images/icon-facebook.svg"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    class="media-btn"
+                    alt="Twitter button"
+                    src="images/icon-twitter.svg"
+                /></a>
+                <a href="#">
+                  <img
+                    class="media-btn"
+                    alt="Pinterest button"
+                    src="images/icon-pinterest.svg"
+                /></a>
+              </span>
+            </div>
+            <button id="share" onclick="share()">
+              <img
+                alt="share icon"
+                src="images/icon-share.svg"
+                onmouseover="this.src='images/icon-share-active.svg';"
+                onmouseout="this.src='images/icon-share.svg';"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="mobile">
+        <span id="mobile-social">
+          SHARE
+          <a href="#"
+            ><img
+              class="media-btn"
+              alt="Facebook button"
+              src="images/icon-facebook.svg"
+            />
+          </a>
+          <a href="#">
+            <img
+              class="media-btn"
+              alt="Twitter button"
+              src="images/icon-twitter.svg"
+          /></a>
+          <a href="#">
+            <img
+              class="media-btn"
+              alt="Pinterest button"
+              src="images/icon-pinterest.svg"
+          /></a>
+        </span>
+        <div>
+          <button id="share-mobile" onclick="share()">
+            <img alt="share icon" src="images/icon-share-active.svg" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function share() {
+      if (window.innerWidth > 780) {
+        if (
+          tooltiptext.style.display === "none" ||
+          tooltiptext.style.display === ""
+        ) {
+          tooltiptext.style.display = "block";
+        } else {
+          tooltiptext.style.display = "none";
+        }
+      } else {
+        if (mobile.style.display === "none" || mobile.style.display === "") {
+          mobile.style.display = "flex";
+          personal.style.display = "none";
+        } else {
+          mobile.style.display = "none";
+          personal.style.display = "flex";
+        }
+      }
+    }
+  </script>
+</html>
