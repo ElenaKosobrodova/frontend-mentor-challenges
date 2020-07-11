@@ -17,6 +17,7 @@ body {
 
 .text-container {
   padding: 10px 35px 0 35px;
+  width: 100%;
 }
 
 #drawers {
