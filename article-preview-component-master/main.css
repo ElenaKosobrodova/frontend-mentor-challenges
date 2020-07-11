@@ -148,4 +148,7 @@ body {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 0px;
   }
+  .text-container {
+    width: 85%;
+  }
 }
