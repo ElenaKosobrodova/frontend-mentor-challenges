@@ -1,0 +1,57 @@
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  background-image: url(/images/bg-intro-desktop.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 40%;
+  margin: 0;
+}
+
+nav {
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  margin: 10px 30px;
+}
+
+section {
+  padding: 40px;
+}
+
+#next-generation {
+  width: 50%;
+}
+
+#mobile-phones {
+  width: 30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.photo {
+  width: 20vw;
+}
+
+footer {
+  background-color: hsl(233, 26%, 24%);
+  color: white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
