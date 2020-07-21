@@ -1,10 +1,6 @@
 body {
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
-  background-image: url(/images/bg-intro-desktop.svg);
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-size: 40%;
   margin: 0;
 }
 
@@ -15,28 +11,82 @@ nav {
   position: relative;
 }
 
+.nav-link {
+  color: hsl(233, 8%, 62%);
+  text-decoration: none;
+  margin: 10px;
+}
+
 .flex-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.nav-bar {
+  padding: 15px 5px;
 }
 
 #logo {
-  margin: 10px 30px;
+  margin: 10px 45px;
+}
+
+.btn {
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+  color: white;
+  width: 135px;
+  height: 40px;
+  border: none;
 }
 
 section {
-  padding: 40px;
+  padding: 5% 10%;
+}
+
+#section1 {
+  background-color: hsl(0, 0%, 98%);
+}
+
+#section1-div {
+  padding-bottom: 50px;
+}
+
+#section2 {
+  background-color: hsl(220, 16%, 96%);
 }
 
 #next-generation {
-  width: 50%;
+  width: 40%;
 }
 
-#mobile-phones {
-  width: 30%;
+#mobile-phones,
+#spots {
+  width: 40%;
   position: absolute;
   top: 0;
   right: 0;
+}
+
+#spots {
+  width: 55%;
+  top: -100px;
+}
+
+#main-title {
+  font-size: 45px;
+}
+
+p {
+  color: hsl(233, 8%, 62%);
+  line-height: 28px;
+}
+
+#choose-easybank {
+  width: 60%;
 }
 
 .photo {
