@@ -11,10 +11,26 @@ nav {
   position: relative;
 }
 
+.nav-link-div {
+  padding-top: 10px;
+}
+
 .nav-link {
   color: hsl(233, 8%, 62%);
   text-decoration: none;
   margin: 10px;
+}
+
+.nav-link:hover {
+  color: hsl(233, 26%, 24%);
+  border-bottom: 6px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+  padding-bottom: 15px;
+  border-image-slice: 1;
 }
 
 .flex-container {
@@ -23,7 +39,7 @@ nav {
 }
 
 .nav-bar {
-  padding: 15px 5px;
+  padding: 10px 5px;
 }
 
 #logo {
@@ -41,6 +57,14 @@ nav {
   width: 135px;
   height: 40px;
   border: none;
+}
+
+.btn:hover {
+  background-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 65%),
+    hsl(192, 78%, 64%)
+  );
 }
 
 #btn2 {
@@ -79,6 +103,10 @@ section {
 #spots {
   width: 55%;
   top: -120px;
+}
+
+.title-color {
+  color: hsl(233, 26%, 24%);
 }
 
 #main-title {
@@ -140,6 +168,40 @@ h6,
 footer {
   background-color: hsl(233, 26%, 24%);
   color: white;
+  padding-top: 20px;
+}
+
+#logo-footer {
+  margin: 20px 0;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 15px 40px;
+}
+
+.footer-link:hover {
+  color: hsl(136, 65%, 51%);
+}
+
+#media-div {
+  display: block;
+  margin-right: 60px;
+}
+
+.media-btn {
+  margin: 25px 5px;
+}
+
+#footer-btn-div {
+  margin: 20px 0;
+  display: block;
+}
+
+#footer-btn {
+  margin: 5px 0 20px 45px;
 }
 
 .attribution {

@@ -31,7 +31,7 @@
     <section id="section1">
       <div id="section1-div">
         <div id="next-generation">
-          <h1 id="main-title">
+          <h1 id="main-title" class="title-color">
             Next generation digital banking
           </h1>
           <p>
@@ -57,7 +57,7 @@
     </section>
     <section id="section2">
       <div id="choose-easybank">
-        <h2 class="secondary-title">
+        <h2 class="secondary-title title-color">
           Why choose Easybank?
         </h2>
         <p class="p-section2">
@@ -72,7 +72,7 @@
             class="green-icon"
             src="images/icon-online.svg"
           />
-          <h3>
+          <h3 class="title-color">
             Online Banking
           </h3>
           <p class="p-section2">
@@ -86,7 +86,7 @@
             class="green-icon"
             src="/images/icon-budgeting.svg"
           />
-          <h3>
+          <h3 class="title-color">
             Simple Budgeting
           </h3>
           <p class="p-section2">
@@ -100,7 +100,7 @@
             class="green-icon"
             src="images/icon-onboarding.svg"
           />
-          <h3>
+          <h3 class="title-color">
             Fast Onboarding
           </h3>
           <p class="p-section2">
@@ -114,7 +114,7 @@
             class="green-icon"
             src="images/icon-api.svg"
           />
-          <h3>
+          <h3 class="title-color">
             Open API
           </h3>
           <p class="p-section2">
@@ -125,17 +125,17 @@
       </div>
     </section>
     <section id="section3">
-      <h2 class="secondary-title">
+      <h2 class="secondary-title title-color">
         Latest Articles
       </h2>
       <div class="flex-container">
         <card class="card">
           <img alt="money" class="photo" src="images/image-currency.jpg" />
           <div class="card-text">
-            <h6>
+            <h6 class="title-color">
               By Claire Robinson
             </h6>
-            <h3 class="subtitle">
+            <h3 class="subtitle title-color">
               Receive money in any currency with no fees
             </h3>
             <p class="p-section3">
@@ -151,10 +151,10 @@
             src="images/image-restaurant.jpg"
           />
           <div class="card-text">
-            <h6>
+            <h6 class="title-color">
               By Wilson Hutton
             </h6>
-            <h3 class="subtitle">
+            <h3 class="subtitle title-color">
               Treat yourself without worrying about money
             </h3>
             <p class="p-section3">
@@ -166,10 +166,10 @@
         <card class="card">
           <img alt="airplane" class="photo" src="images/image-plane.jpg" />
           <div class="card-text">
-            <h6>
+            <h6 class="title-color">
               By Wilson Hutton
             </h6>
-            <h3 class="subtitle">
+            <h3 class="subtitle title-color">
               Take your Easybank card wherever you go
             </h3>
             <p class="p-section3">
@@ -181,10 +181,10 @@
         <card class="card">
           <img alt="confetti" class="photo" src="images/image-confetti.jpg" />
           <div class="card-text">
-            <h6>
+            <h6 class="title-color">
               By Claire Robinson
             </h6>
-            <h3 class="subtitle">
+            <h3 class="subtitle title-color">
               Our invite-only
             </h3>
             <p class="p-section3">
@@ -198,24 +198,75 @@
     </section>
     <footer>
       <div class="flex-container">
-        <div>
-          <img alt="easybank's logo" id="logo" src="/images/logo-white.svg" />
-        </div>
-        <div>
+        <div class="flex-container">
+          <div id="media-div">
+            <div>
+              <img
+                alt="easybank's logo"
+                id="logo-footer"
+                src="/images/logo-white.svg"
+              />
+            </div>
+            <span class="icons">
+              <a href="#"
+                ><img
+                  class="media-btn"
+                  alt="Facebook button"
+                  src="images/icon-facebook.svg"
+                  onmouseover="this.src='images/icon-facebook-active.svg';"
+                  onmouseout="this.src='images/icon-facebook.svg';"
+                />
+              </a>
+              <a href="#"
+                ><img
+                  class="media-btn"
+                  alt="Youtube button"
+                  src="images/icon-youtube.svg"
+                  onmouseover="this.src='images/icon-youtube-active.svg';"
+                  onmouseout="this.src='images/icon-youtube.svg';"
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="media-btn"
+                  alt="Twitter button"
+                  src="images/icon-twitter.svg"
+                  onmouseover="this.src='images/icon-twitter-active.svg';"
+                  onmouseout="this.src='images/icon-twitter.svg';"
+              /></a>
+              <a href="#">
+                <img
+                  class="media-btn"
+                  alt="Pinterest button"
+                  src="images/icon-pinterest.svg"
+                  onmouseover="this.src='images/icon-pinterest-active.svg';"
+                  onmouseout="this.src='images/icon-pinterest.svg';"
+              /></a>
+              <a href="#"
+                ><img
+                  class="media-btn"
+                  alt="Instagram button"
+                  src="images/icon-instagram.svg"
+                  onmouseover="this.src='images/icon-instagram-active.svg';"
+                  onmouseout="this.src='images/icon-instagram.svg';"
+                />
+              </a>
+            </span>
+          </div>
           <div>
-            <a>About Us</a>
-            <a>Contact</a>
-            <a>Blog</a>
+            <a class="footer-link" href="#">About Us</a>
+            <a class="footer-link" href="#">Contact</a>
+            <a class="footer-link" href="#">Blog</a>
           </div>
-          <div class="footer-links">
-            <a>Career</a>
-            <a>Support</a>
-            <a>Privacy Policy</a>
+          <div>
+            <a class="footer-link" href="#">Career</a>
+            <a class="footer-link" href="#">Support</a>
+            <a class="footer-link" href="#">Privacy Policy</a>
           </div>
         </div>
-        <div>
-          <button class="btn">Request Invite</button>
-          <h6>
+        <div id="footer-btn-div">
+          <button class="btn" id="footer-btn">Request Invite</button>
+          <h6 id="co-easybank">
             © Easybank. All Rights Reserved
           </h6>
         </div>
