@@ -67,6 +67,31 @@ nav {
   );
 }
 
+#toggle {
+  display: none;
+}
+
+#toggleBtn {
+  width: 40px;
+  height: 30px;
+  background-color: white;
+  border: none;
+}
+
+#hamburger {
+  display: block;
+  margin-left: 2px;
+}
+#closeIcon {
+  display: none;
+  margin-left: 5px;
+}
+
+.container {
+  background-color: white;
+  height: 30%;
+}
+
 #btn2 {
   margin-top: 20px;
 }
@@ -88,11 +113,11 @@ section {
   background-color: hsl(220, 16%, 96%);
 }
 
-#next-generation {
+#nextGeneration {
   width: 45%;
 }
 
-#mobile-phones,
+#mobilePhones,
 #spots {
   width: 42%;
   position: absolute;
@@ -103,6 +128,10 @@ section {
 #spots {
   width: 55%;
   top: -120px;
+}
+
+#spotsMobile {
+  display: none;
 }
 
 .title-color {
@@ -147,9 +176,13 @@ p {
 
 .photo {
   width: 100%;
-  height: 45%;
+  height: 46%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+
+.author {
+  font-weight: 400;
 }
 
 h6,
@@ -202,6 +235,121 @@ footer {
 
 #footer-btn {
   margin: 5px 0 20px 45px;
+}
+
+#co-easybank {
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-container {
+    display: block;
+  }
+  body {
+    text-align: center;
+  }
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-link-div {
+    display: none;
+  }
+  #toggle {
+    display: block;
+    margin: 5px 30px;
+  }
+  #choose-easybank,
+  #nextGeneration {
+    width: 100%;
+  }
+  #btn1 {
+    display: none;
+  }
+  #mobilePhones {
+    width: 100%;
+    margin-top: -120px;
+  }
+  #spotsMobile {
+    display: inline-block;
+    width: 100vw;
+    position: relative;
+    right: 50px;
+    top: -100px;
+  }
+  #spots {
+    display: none;
+  }
+  #main-title {
+    margin-top: -140px;
+    font-size: 50px;
+  }
+  .author,
+  .subtitle,
+  .p-section3 {
+    text-align: left;
+  }
+
+  .p-section2 {
+    margin-right: 0;
+  }
+  .card-text {
+    margin: 20px;
+  }
+  .green-icon {
+    margin-top: 20px;
+  }
+
+  #media-div {
+    margin-right: 0;
+  }
+  #footer-btn {
+    margin-left: -10px;
+  }
+  footer {
+    padding-bottom: 20px;
+  }
+}
+
+#mobileNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 65px;
+  left: 0;
+  background: linear-gradient(hsl(240, 7%, 3%), hsl(224, 10%, 28%));
+  opacity: 0.8;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+#menu {
+  display: none;
+  position: absolute;
+  top: 10%;
+  width: 78%;
+  height: 45%;
+  background-color: hsl(0, 0%, 98%);
+  border-radius: 7px;
+  text-align: center;
+  margin: 30px;
+  padding: 20px;
+  z-index: 100;
+}
+
+#menu a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 24px;
+  color: hsl(233, 26%, 24%);
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+
+#menu a:hover {
+  color: hsl(115, 59%, 39%);
 }
 
 .attribution {

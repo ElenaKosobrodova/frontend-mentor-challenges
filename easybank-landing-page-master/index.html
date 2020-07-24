@@ -24,12 +24,51 @@
         <a class="nav-link" href="#">Blog</a>
         <a class="nav-link" href="#">Careers</a>
       </div>
-      <div>
+      <div id="btn1">
         <button class="btn">Request Invite</button>
       </div>
+      <div id="toggle">
+        <button id="toggleBtn" onclick="openNav()">
+          <img
+            id="hamburger"
+            alt="hamburger for toggle button"
+            src="images/icon-hamburger.svg"
+          />
+          <img
+            id="closeIcon"
+            alt="cross for toggle button"
+            src="images/icon-close.svg"
+          />
+        </button>
+      </div>
     </nav>
+    <div id="mobileNav"></div>
+    <div id="menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Blog</a>
+      <a href="#">Careers</a>
+    </div>
     <section id="section1">
       <div id="section1-div">
+        <div>
+          <img
+            alt="blue and green spots for mobile version"
+            id="spotsMobile"
+            src="/images/bg-intro-mobile.svg"
+          />
+          <img
+            alt="blue and green spots for desktop version"
+            id="spots"
+            src="/images/bg-intro-desktop.svg"
+          />
+          <img
+            alt="photo of mobile phones"
+            id="mobilePhones"
+            src="images/image-mockups.png"
+          />
+        </div>
         <div id="next-generation">
           <h1 id="main-title" class="title-color">
             Next generation digital banking
@@ -40,18 +79,6 @@
             more.
           </p>
           <button class="btn" id="btn2">Request Invite</button>
-        </div>
-        <div>
-          <img
-            alt="blue and green spots"
-            id="spots"
-            src="/images/bg-intro-desktop.svg"
-          />
-          <img
-            alt="photo of mobile phones"
-            id="mobile-phones"
-            src="images/image-mockups.png"
-          />
         </div>
       </div>
     </section>
@@ -132,7 +159,7 @@
         <card class="card">
           <img alt="money" class="photo" src="images/image-currency.jpg" />
           <div class="card-text">
-            <h6 class="title-color">
+            <h6 class="title-color author">
               By Claire Robinson
             </h6>
             <h3 class="subtitle title-color">
@@ -151,7 +178,7 @@
             src="images/image-restaurant.jpg"
           />
           <div class="card-text">
-            <h6 class="title-color">
+            <h6 class="title-color author">
               By Wilson Hutton
             </h6>
             <h3 class="subtitle title-color">
@@ -166,7 +193,7 @@
         <card class="card">
           <img alt="airplane" class="photo" src="images/image-plane.jpg" />
           <div class="card-text">
-            <h6 class="title-color">
+            <h6 class="title-color author">
               By Wilson Hutton
             </h6>
             <h3 class="subtitle title-color">
@@ -181,7 +208,7 @@
         <card class="card">
           <img alt="confetti" class="photo" src="images/image-confetti.jpg" />
           <div class="card-text">
-            <h6 class="title-color">
+            <h6 class="title-color author">
               By Claire Robinson
             </h6>
             <h3 class="subtitle title-color">
@@ -280,4 +307,21 @@
       >. Coded by <a href="#">Elena Kosobrodova</a>.
     </div>
   </body>
+  <script>
+    function openNav() {
+      if (mobileNav.style.width == 0 || mobileNav.style.width == "0px") {
+        mobileNav.style.width = "100%";
+        closeIcon.style.display = "block";
+        menu.style.display = "block";
+        hamburger.style.display = "none";
+        mobilePhones.style.display = "none";
+      } else {
+        mobileNav.style.width = 0;
+        closeIcon.style.display = "none";
+        menu.style.display = "none";
+        hamburger.style.display = "block";
+        mobilePhones.style.display = "block";
+      }
+    }
+  </script>
 </html>
